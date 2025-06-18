@@ -23,6 +23,7 @@ st.title("🏥 CALIBER360 | CA Healthcare Competitive Intelligence Dashboard")
 
 # Gemini setup
 GEMINI_MODEL = "gemini-1.5-flash"
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 # GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 llm = ChatGoogleGenerativeAI(google_api_key=GEMINI_API_KEY, model=GEMINI_MODEL, temperature=0)
 
