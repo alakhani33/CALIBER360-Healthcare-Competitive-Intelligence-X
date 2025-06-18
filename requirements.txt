@@ -4,5 +4,3 @@ plotly
 python-dotenv
 langchain
 langchain-google-genai
-functools
-json
