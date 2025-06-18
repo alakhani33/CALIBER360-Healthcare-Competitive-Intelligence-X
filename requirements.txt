@@ -1,0 +1,10 @@
+streamlit
+pandas
+plotly
+python-dotenv
+langchain
+langchain-google-genai
+os
+functools
+load_dotenv
+json
