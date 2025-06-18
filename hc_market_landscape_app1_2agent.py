@@ -76,7 +76,7 @@ def generate_insight(title, df_as, df_ed):
 
 def load_combined_data(folder_prefix):
     filenames = [
-        f"../APP/combined_{folder_prefix}_2024_table{i}.csv" for i in range(7, 16)
+        f"combined_{folder_prefix}_2024_table{i}.csv" for i in range(7, 16)
     ]
     tables = []
     for file in filenames:
