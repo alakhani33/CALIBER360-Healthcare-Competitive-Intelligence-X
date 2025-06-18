@@ -4,15 +4,15 @@ import os
 import plotly.express as px
 from functools import reduce
 
-from dotenv import load_dotenv
-import os
+# from dotenv import load_dotenv
+# import os
 
-# Load environment variables.
-load_dotenv()
+# # Load environment variables.
+# load_dotenv()
 
 import streamlit as st
 import pandas as pd
-import os
+# import os
 from functools import reduce
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.schema import HumanMessage
@@ -23,7 +23,7 @@ st.title("🏥 CALIBER360 | CA Healthcare Competitive Intelligence Dashboard")
 
 # Gemini setup
 GEMINI_MODEL = "gemini-1.5-flash"
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+# GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 llm = ChatGoogleGenerativeAI(google_api_key=GEMINI_API_KEY, model=GEMINI_MODEL, temperature=0)
 
 def generate_insight(title, df_as, df_ed):
